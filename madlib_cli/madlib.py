@@ -64,8 +64,9 @@ def write(name):
     """
     with open(name, 'w') as write_file:
         result = write_file.write(merge())
+        return result
 
 
 if __name__ == "__main__": 
-    write_content(madlib_result.txt)
+    write('assets/madlib_result.txt')
 
